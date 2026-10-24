@@ -1,0 +1,44 @@
+{
+  "name": "@asyntai/builder-plugin-ai-chatbot",
+  "version": "1.0.0",
+  "description": "Asyntai AI Chatbot for Builder.io: add an AI chatbot to your Builder.io pages and send page content to its knowledge base.",
+  "keywords": [
+    "builder.io",
+    "builder-plugin",
+    "builder.io-plugin",
+    "ai-chatbot",
+    "chatbot",
+    "ai-assistant",
+    "customer-support",
+    "live-chat",
+    "asyntai"
+  ],
+  "homepage": "https://asyntai.com/documentation/integrations/builderio/",
+  "bugs": {
+    "email": "hello@asyntai.com"
+  },
+  "license": "MIT",
+  "author": "Asyntai <hello@asyntai.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asyntai/builder-plugin-ai-chatbot.git"
+  },
+  "type": "module",
+  "main": "dist/plugin.system.js",
+  "unpkg": "dist/plugin.system.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "start": "rollup -c rollup.config.mjs -w --environment SERVE:true",
+    "test": "node --test test/plugin.test.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "rollup": "^4.24.0",
+    "rollup-plugin-serve": "^3.0.0"
+  }
+}
